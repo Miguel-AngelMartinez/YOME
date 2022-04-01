@@ -12,7 +12,7 @@ use App\Http\Controllers\vistaController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {return view('welcome');});
+Route::get('/',[vistaController::class,'videos'])->name('video');
 Route::get('/vista', [vistaController::class, 'index'])->name('index');
 Route::get('/nueva vista', [vistaController::class, 'vista'])->name('vista');
 

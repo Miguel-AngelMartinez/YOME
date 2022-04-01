@@ -31,5 +31,13 @@ class videos extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        DB::table('videos')->insert([
+            'title'=>'Laravel para principiantes en programación | Ítalo Morales',
+            'description'=>'Si tienes tuda de tu nueva suscripción. Escríbenos a team@platzi.com',
+            'video_url' =>'https://www.youtube.com/embed/ficrunlHdZ4',
+            'created_at' =>now(),
+            'updated_at' =>now(),
+
+        ]);
     }
 }

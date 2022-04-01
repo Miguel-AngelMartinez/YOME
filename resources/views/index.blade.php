@@ -105,15 +105,12 @@
 								<!-- Sidebar -->
 									<section>
 										<header>
-											<h2>Magna Phasellus</h2>
+											<h2>contactame!!</h2>
 										</header>
 										<ul class="link-list">
-											<li><a href="#">Sed dolore viverra</a></li>
-											<li><a href="#">Ligula non varius</a></li>
-											<li><a href="#">Nec sociis natoque</a></li>
-											<li><a href="#">Penatibus et magnis</a></li>
-											<li><a href="#">Dis parturient montes</a></li>
-											<li><a href="#">Nascetur ridiculus</a></li>
+											<li><a href="https://www.facebook.com/miguelangel.martinezcastro.75">pagina de facebook</a></li>
+											<li><a href="https://github.com/Miguel-AngelMartinez">link a github</a></li>
+
 										</ul>
 									</section>
 									<section>

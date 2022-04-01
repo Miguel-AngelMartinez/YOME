@@ -3,9 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\video;
 class vistaController extends Controller
 {
+    public function videos(){
+        $videos=video::all();
+        $v=[];
+        foreach ( $videos as $videos){
+            $v[]=[
+            'titulo'=>$videos->title,
+            'descripcion'=>$videos->description,
+            'url'=>$videos->video_url,
+            ];
+        }
+        return view('welcome',['v'=>$v]);
+    }
     //
     public function youtube(){
 
@@ -16,7 +28,6 @@ class vistaController extends Controller
         $response = $client->request('GET', 'http://www.boredapi.com/api/activity/');
         $json = $response->getBody();
         $datos = json_decode($json, true);
-
 
 
 
@@ -62,5 +73,5 @@ class vistaController extends Controller
     public function vista(){
         return view('index',['news' => $this->apiMarco()]);
     }
-    
+
 }
